@@ -1,0 +1,113 @@
+﻿*{
+    margin:0;
+    padding:0;
+}
+body{
+    background-image:url(../images/back.jpg);
+    background-size:cover;
+    background-position:center;
+    padding:0;
+   width: auto;
+}
+
+
+.menu-bar {
+    background-color:slategray;
+    text-align:center;
+}
+.menu-bar ul{
+    display:flex;
+    list-style:none;
+}
+.menu-bar ul li{
+   margin:5px;
+    padding:10px;
+    width:100px;
+    font-size:20px;
+   
+}
+    .menu-bar ul li a {
+        text-decoration: none;
+        color:white;
+    }
+    .menu-bar ul li a:hover{
+       color:darkgreen;
+    }
+     .submenu ul{
+        display: none;
+        font-size:5px;
+    }
+    .submenu ul li{
+        font-size:15px;
+        color: aquamarine;
+     }
+        .menu-bar ul li:hover .submenu ul {
+            display: block;
+            position: absolute;
+        }
+            .menu-bar ul li:hover .submenu ul li a:hover {
+                color: limegreen;
+            }
+           .fo{   
+               color:white;
+               font-size:20px;
+           }
+.reg {
+    margin: auto;
+    width: 25%;
+    padding: 40px;
+    font-size: medium;
+}
+.textbox {
+    width: 100%;
+    padding: 2px;
+    box-sizing: border-box;
+    font-size: 14px
+}
+.button1 {
+    width: 30%;
+    padding: 2px;
+    box-sizing: border-box;
+    font-size: 14px;
+    text-align:center;
+}
+.userdetails {
+    text-align:right;
+    color:darkred
+}
+
+
+.tblinfo tr th {
+    border: 1px solid #6e7bd9;
+    color: white;
+    background-color: #6e7bd9;
+}
+
+.tblinfo tr {
+    background-color: lightblue;
+}
+
+.tblinfo tr td {
+    border: 1px solid #000;
+}
+    .tblinfo tr:nth-child(even){
+        background-color: cadetblue;
+    }
+        .tblinfo tr:nth-child(odd){
+            background-color:aquamarine;
+        }
+        .tblinfo tr:nth-child(even):hover {
+            background: #f8f7ff
+        }
+
+.tblinfo tr:nth-child(odd):hover {
+    background: #fff;
+}
+
+
+
+
+
+
+
+

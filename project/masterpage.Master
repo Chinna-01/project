@@ -1,0 +1,73 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="masterpage.master.cs" Inherits="project.masterpage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+        }
+      
+    </style>
+    <link type="text/css" href="css/Style.css" rel="stylesheet"  /> 
+</head>
+<body >
+    <form id="form1" runat="server">
+        
+            <table class="auto-style1">
+                <tr>
+                    <td >
+                        <div class="userdetails">
+                            <p style="color: aqua ;text-align:center; font-size:50px;">TEST PROJECT</p><br />
+
+                            <label  style="color:white">Welcome&nbsp;</label>
+                            <label style="color:white" >User Name:&nbsp;</label> <asp:Label style="color:white" ID="uname" runat="server"  Visible="true" text=""></asp:Label>
+                               <label style="color:white" >&nbsp;User Role:&nbsp;</label>  <asp:Label style="color:white" ID="role" runat="server" text=""></asp:Label>   
+                         </div> 
+                        </td>
+                    </tr>
+                <tr>
+                    <td>
+                    <br />
+                        <div class="menu-bar" >
+                            <ul>
+                               <li ><a href="welcome.aspx">Home</a></li>
+                               
+                               <li><a href="#">Add/Modify</a>
+                                  <div class="submenu"> 
+                                      <ul>
+                                           <li><a href="managerreg.aspx">Manager</a></li>
+                                          <li><a href="teamleaderreg.aspx">TeamLeader</a></li>
+                                            <li><a href="reg.aspx"> Employee</a></li>
+                                   </ul>
+
+                                  </div>
+                               </li>
+                               <li><a href="info.aspx">Information</a></li>
+                                <li><a href="logout.aspx">Logout</a></li>
+                                 <li><a href="#">Help</a></li>
+                             </ul>
+                         </div>
+                        &nbsp;</td>
+                  
+                </tr>
+                <tr>
+                    <td>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+                    </td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                </tr>
+            </table>
+       
+    </form>
+
+
+</body>
+</html>
